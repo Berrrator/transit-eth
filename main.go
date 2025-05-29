@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"transit-eth/transiteth"
+	"transit-eth/backend"
 
 	"github.com/hashicorp/vault/api"
 	"github.com/hashicorp/vault/sdk/plugin"
@@ -19,7 +19,7 @@ func main() {
 	tlsProviderFunc := api.VaultPluginTLSProvider(tlsConfig)
 
 	err := plugin.Serve(&plugin.ServeOpts{
-		BackendFactoryFunc: transiteth.Factory,
+		BackendFactoryFunc: backend.Factory,
 		TLSProviderFunc:    tlsProviderFunc,
 	})
 	if err != nil {
