@@ -1,8 +1,6 @@
 module transit-eth
 
-go 1.24.0
-
-toolchain go1.24.3
+go 1.24.2
 
 require (
 	github.com/fatih/structs v1.1.0
