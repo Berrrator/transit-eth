@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hashicorp/vault/sdk/keysutil"
+	"github.com/hashicorp/vault/sdk/helper/keysutil"
 
 	"github.com/hashicorp/go-multierror"
 	"github.com/hashicorp/vault/helper/constants"

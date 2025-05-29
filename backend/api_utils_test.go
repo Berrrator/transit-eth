@@ -6,7 +6,7 @@ package backend
 import (
 	"testing"
 
-	"github.com/hashicorp/vault/sdk/keysutil"
+	"github.com/hashicorp/vault/sdk/helper/keysutil"
 )
 
 // Test_parsePaddingSchemeArg validate the various use cases we have around parsing

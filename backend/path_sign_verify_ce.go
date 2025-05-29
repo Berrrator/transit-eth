@@ -9,7 +9,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/hashicorp/vault/sdk/keysutil"
+	"github.com/hashicorp/vault/sdk/helper/keysutil"
 )
 
 // validateSignApiArgsVersionSpecific will perform a validation of the Sign API parameters

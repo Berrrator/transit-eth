@@ -9,7 +9,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hashicorp/vault/sdk/keysutil"
+	"github.com/hashicorp/vault/sdk/helper/keysutil"
 
 	stepwise "github.com/hashicorp/vault-testing-stepwise"
 	dockerEnvironment "github.com/hashicorp/vault-testing-stepwise/environments/docker"

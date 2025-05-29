@@ -12,7 +12,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/vault/sdk/keysutil"
+	"github.com/hashicorp/vault/sdk/helper/keysutil"
 
 	"github.com/hashicorp/vault/helper/constants"
 	"github.com/hashicorp/vault/sdk/logical"
