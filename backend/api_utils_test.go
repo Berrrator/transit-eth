@@ -6,7 +6,7 @@ package backend
 import (
 	"testing"
 
-	"transit-eth/backend/keysutil"
+	"github.com/hashicorp/vault/sdk/keysutil"
 )
 
 // Test_parsePaddingSchemeArg validate the various use cases we have around parsing

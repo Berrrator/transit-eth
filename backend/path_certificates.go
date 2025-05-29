@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"strings"
 
-	"transit-eth/backend/keysutil"
+	"github.com/hashicorp/vault/sdk/keysutil"
 
 	"github.com/hashicorp/vault/sdk/framework"
 	"github.com/hashicorp/vault/sdk/helper/errutil"

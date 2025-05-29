@@ -6,7 +6,7 @@ package backend
 import (
 	"fmt"
 
-	"transit-eth/backend/keysutil"
+	"github.com/hashicorp/vault/sdk/keysutil"
 )
 
 // parsePaddingSchemeArg validate that the provided padding scheme argument received on the api can be used.

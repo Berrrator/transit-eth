@@ -9,7 +9,7 @@ import (
 	"context"
 	"fmt"
 
-	"transit-eth/backend/keysutil"
+	"github.com/hashicorp/vault/sdk/keysutil"
 )
 
 // validateSignApiArgsVersionSpecific will perform a validation of the Sign API parameters

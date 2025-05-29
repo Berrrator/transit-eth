@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"transit-eth/backend/keysutil"
+	"github.com/hashicorp/vault/sdk/keysutil"
 
 	uuid "github.com/hashicorp/go-uuid"
 	"github.com/hashicorp/vault/api"
