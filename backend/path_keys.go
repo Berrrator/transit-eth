@@ -1,7 +1,7 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
-package transiteth
+package backend
 
 import (
 	"context"
@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"transit-eth/transiteth/keysutil"
+	"transit-eth/backend/keysutil"
 
 	"github.com/fatih/structs"
 	"github.com/hashicorp/vault/helper/constants"
