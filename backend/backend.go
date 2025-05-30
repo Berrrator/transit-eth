@@ -3,7 +3,6 @@ package backend
 import (
 	"context"
 	"errors"
-	"fmt"
 	"io"
 	"strconv"
 	"strings"
@@ -99,9 +98,12 @@ func Backend(ctx context.Context, conf *logical.BackendConfig) (*backend, error)
 		var err error
 		cacheSize, err = GetCacheSizeFromStorage(ctx, conf.StorageView)
 		if err != nil {
-			return nil, fmt.Errorf("Error retrieving cache size from storage: %w", err)
+			b.Logger().Warn("Error retrieving cache size from storage: %w", err)
 		}
-
+		//if err != nil {
+		//	return nil, fmt.Errorf("Error retrieving cache size from storage: %w", err)
+		//}
+		cacheSize = 5
 		if cacheSize != 0 && cacheSize < minCacheSize {
 			b.Logger().Warn("size %d is less than minimum %d. Cache size is set to %d", cacheSize, minCacheSize, minCacheSize)
 			cacheSize = minCacheSize
