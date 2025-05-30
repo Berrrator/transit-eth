@@ -82,12 +82,12 @@ func Backend(ctx context.Context, conf *logical.BackendConfig) (*backend, error)
 			b.pathImportCertChain(),
 		},
 
-		Secrets:      []*framework.Secret{},
-		Invalidate:   b.invalidate,
-		BackendType:  logical.TypeLogical,
-		PeriodicFunc: b.periodicFunc,
+		Secrets: []*framework.Secret{},
+		//Invalidate:   b.invalidate,
+		BackendType: logical.TypeLogical,
+		//PeriodicFunc: b.periodicFunc,
 		//InitializeFunc: b.initialize,
-		Clean: b.cleanup,
+		//Clean: b.cleanup,
 	}
 
 	b.backendUUID = conf.BackendUUID
